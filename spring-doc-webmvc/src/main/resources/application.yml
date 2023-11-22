@@ -13,4 +13,3 @@ custom:
   # 这一条需移除，仅适配注解和JavaBean两种配置方式共存，选择一种保留即可
   config-type: anno
 
-
