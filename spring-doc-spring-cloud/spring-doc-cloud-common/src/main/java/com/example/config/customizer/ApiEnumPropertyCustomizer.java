@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.type.SimpleType;
 import io.swagger.v3.core.converter.AnnotatedType;
 import io.swagger.v3.oas.models.media.Schema;
 import org.springdoc.core.customizers.PropertyCustomizer;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ObjectUtils;
 
 import java.lang.reflect.ParameterizedType;
@@ -17,7 +17,7 @@ import java.lang.reflect.Type;
  *
  * @author vains
  */
-@Component
+@Configuration(proxyBeanMethods = false)
 public class ApiEnumPropertyCustomizer implements PropertyCustomizer, BasicEnumCustomizer {
 
     @Override

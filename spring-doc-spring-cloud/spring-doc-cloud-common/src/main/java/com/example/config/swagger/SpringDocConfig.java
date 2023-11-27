@@ -18,7 +18,6 @@ import org.springframework.context.annotation.Configuration;
  *
  * @author vains
  */
-@Configuration
 @OpenAPIDefinition(
         info = @Info(
                 // 标题
@@ -63,5 +62,6 @@ import org.springframework.context.annotation.Configuration;
                 )
         )
 )})
-public class SpringDocAnnoConfig {
+@Configuration(proxyBeanMethods = false)
+public class SpringDocConfig {
 }
