@@ -24,6 +24,11 @@ import java.util.stream.Collectors;
 import static org.springdoc.core.utils.Constants.DEFAULT_API_DOCS_URL;
 import static org.springframework.cloud.loadbalancer.core.CachingServiceInstanceListSupplier.SERVICE_INSTANCE_CACHE_NAME;
 
+/**
+ * 监听注册中心实例注册状态改变事件，微服务实例状态改变后刷新swagger ui的组(一个组等于一个微服务)
+ *
+ * @author vains
+ */
 @Slf4j
 @Configuration(proxyBeanMethods = false)
 public class InstancesChangeEventListener extends Subscriber<InstancesChangeEvent> {

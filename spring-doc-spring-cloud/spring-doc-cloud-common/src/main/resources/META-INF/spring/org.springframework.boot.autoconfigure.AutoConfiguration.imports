@@ -1,0 +1,7 @@
+# 这里是展示公共包中包路径与其它引用的微服务包路径不一致的注入方式
+com.example.config.web.WebmvcConfig
+com.example.config.web.WebfluxConfig
+com.example.config.swagger.SpringDocConfig
+com.example.config.converter.EnumConverterFactory
+com.example.config.customizer.ApiEnumPropertyCustomizer
+com.example.config.customizer.ApiEnumParameterCustomizer
